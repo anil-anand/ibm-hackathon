@@ -66,4 +66,4 @@ class Search:
                     }
 
                 )
-        return pd.DataFrame(job_names, columns=['Relevance', 'Job Title', 'Job Description'])
+        return pd.DataFrame(job_names, columns=['Relevance', 'Job Title', 'Job Description', 'Job Type', 'Duration'])
