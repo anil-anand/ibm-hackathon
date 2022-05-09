@@ -8,7 +8,13 @@ import jobData from "./dummyData";
 import JobCard from "./components/Job/JobCard";
 import PostJob from "./PostJob";
 import './PostJob.css';
-
+import {Card} from '@mui/material';
+import {CardActions} from '@mui/material';
+import { CardContent } from '@mui/material';
+import {CardMedia} from '@mui/material';
+import {Button} from '@mui/material';
+import {Typography} from '@mui/material';
+import { height, width } from "@mui/system";
 
 export default () => {
 const [log,setLog]=useState(true);
@@ -18,8 +24,55 @@ const [seeker,setSeeker]=useState(false);
   return (
     <div>
     {log && <div>
-      <button onClick={()=>{setProvider(true);setLog(false);}}>Job Provider</button>
-      <button onClick={()=>{setSeeker(true);setLog(false);}}>Seeker</button>
+      <Box alignItems="center" justify-content= "space-between" display="flex"  flexDirection="row" marginTop="250px"  >
+      <Card sx={{ minWidth: 500,minheight: 500, marginLeft :50}}>
+      <CardMedia
+        component="img"
+        height="140"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4a1Mb3CSFYa0m_LLOULBucCkLNqOsOYRiLg&usqp=CAU"
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Job Seeker
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button onClick={()=>{setSeeker(true);setLog(false);}}>Seeker</Button>
+       
+      </CardActions>
+    </Card>
+
+
+    <Card sx={{ minWidth: 500  ,marginLeft :10}}>
+   
+      <CardMedia
+        component="img"
+        height="140"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0DmfD6JAJH-TfairJ9r92XTXgS94LiShdA&usqp=CAU"
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Job Provider
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button onClick={()=>{setProvider(true);setLog(false);}}>Job Provider</Button>
+        
+        
+      </CardActions>
+    </Card>
+</Box>
+
+      {/* <button onClick={()=>{setProvider(true);setLog(false);}}>Job Provider</button>
+      <button onClick={()=>{setSeeker(true);setLog(false);}}>Seeker</button> */}
       
     </div>}
     {
