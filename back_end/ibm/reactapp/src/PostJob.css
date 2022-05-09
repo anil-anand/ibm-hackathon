@@ -1,0 +1,88 @@
+.form{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading button{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.jobPost{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.jobPost .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.jobPost .heading::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+.jobPost form .post-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .post-data .input-Box{
+    margin-bottom: 15px;
+    width: calc(100% / 2  - 20px);
+
+}
+.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-Box input,select{
+    height: 45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+
+#desc,#requirement{
+    height: 45px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+#submit{
+    height:100%;
+    width:100%;
+    outline: none;
+    color: #fff;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}

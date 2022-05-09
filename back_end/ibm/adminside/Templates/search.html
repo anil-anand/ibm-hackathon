@@ -1,0 +1,42 @@
+<!doctype html>
+</html>
+<head>
+
+	</head>
+<body>
+	<div style:"margin-left:150px;">
+	<form id="form">
+  <input type="search" id="query" name="q" placeholder="Search by keywords">
+  <button >Search</button>
+  <h2> filter by </h2>
+<div style="margin-top: 20px;">
+
+
+
+
+
+
+  <label for="job">job type</label>
+	<select class="form-control" id="exampleSelectGender" name="jobtype" >
+ 	 <option selected disabled="true">Select</option>
+ 											{% for x in JobPost %}
+ 											<option>{{x.jobtype}}</option>
+ 											{% endfor %}
+ 										</select>
+  <label for="job">duration</label>
+	<select class="form-control" id="exampleSelectGender" name="duration" >
+ 	 <option selected disabled="true">Select</option>
+ 											{% for x in JobPost %}
+ 											<option>{{x.duration}}</option>
+ 											{% endfor %}
+ 										</select>
+</div>
+</div style="margin-bottom: 20px;">
+  
+
+
+
+</form>
+</div>
+</body>
+</html>
