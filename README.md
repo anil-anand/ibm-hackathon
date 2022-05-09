@@ -26,11 +26,11 @@ A job platform, where jobs can be posted, is created. Students can apply for job
 - python manage.py runserver
 
 # How to run
-- Django:
+- Django :
 - cd ibm
 - python manage.py runserver
 
-- React 
+- React :
 - cd reactapp
 - npm run build
 - npm start
